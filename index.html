@@ -397,13 +397,105 @@
   </div>
 </section>
 
-<!-- CONTACT CTA -->
+<!-- CONTACT CTA + CONSULT FORM -->
 <section id="contact" class="cta">
   <div class="wrap reveal">
-    <p class="eyebrow">Let's build your digital home</p>
+    <p class="eyebrow">Book a free consult</p>
     <h2>Ready for a website you're proud to send people to?</h2>
-    <p>Tell us about your business, what you offer, and what you need your website to do. We'll reply with a clear recommendation and the best next step — no pressure, no confusing pitch.</p>
-    <a href="mailto:hello@brownnoir.agency?subject=Website%20Project%20Inquiry&body=Hi%20Brown%20Noir%20Agency%2C%0A%0AI%27d%20like%20to%20chat%20about%20a%20website%20for%20my%20business.%0A%0ABusiness%20name%3A%0AWebsite%20or%20Instagram%20link%3A%0AWhat%20I%20need%20help%20with%3A%0APackage%20I%27m%20interested%20in%20if%20known%3A%0ATimeline%3A%0A%0AThanks%21" class="btn btn-primary" style="padding:15px 34px;font-size:1rem">Book a free consult →</a>
+    <p>Tell us about your business, what you offer, and what you need your website to do. Pick a preferred consult window and we'll reply with a clear next step — no pressure, no confusing pitch.</p>
+    <p class="form-intro-note">Free consults are for fit, clarity, and next steps — not a hard sell.</p>
+
+    <!-- Future upgrade: replace mailto handling with a real scheduling link or backend form submission when available. -->
+    <form class="consult-form" id="consultForm" novalidate>
+      <div class="form-grid">
+        <label>
+          <span>Name *</span>
+          <input type="text" name="name" required placeholder="Your name">
+        </label>
+
+        <label>
+          <span>Business name *</span>
+          <input type="text" name="business" required placeholder="Your business name">
+        </label>
+
+        <label>
+          <span>Email *</span>
+          <input type="email" name="email" required placeholder="you@yourbusiness.com">
+        </label>
+
+        <label>
+          <span>Website or Instagram</span>
+          <input type="text" name="website" placeholder="https:// or @yourhandle">
+        </label>
+
+        <label>
+          <span>What do you need help with? *</span>
+          <select name="help" required>
+            <option value="">Select one</option>
+            <option>I need a new website</option>
+            <option>I need a website refresh</option>
+            <option>I need help organizing my services</option>
+            <option>I need booking/contact setup</option>
+            <option>I'm not sure yet</option>
+          </select>
+        </label>
+
+        <label>
+          <span>Package interest</span>
+          <select name="package">
+            <option>Not sure yet</option>
+            <option>One-Page Website</option>
+            <option>Signature Website</option>
+            <option>Website Glow-Up</option>
+          </select>
+        </label>
+
+        <label>
+          <span>Preferred consult day *</span>
+          <select name="day" required>
+            <option value="">Select one</option>
+            <option>Monday</option>
+            <option>Tuesday</option>
+            <option>Wednesday</option>
+            <option>Thursday</option>
+            <option>Friday</option>
+            <option>Weekend if available</option>
+          </select>
+        </label>
+
+        <label>
+          <span>Preferred consult time *</span>
+          <select name="time" required>
+            <option value="">Select one</option>
+            <option>Morning</option>
+            <option>Afternoon</option>
+            <option>Evening</option>
+          </select>
+        </label>
+
+        <label>
+          <span>Timeline</span>
+          <select name="timeline">
+            <option>Just exploring</option>
+            <option>As soon as possible</option>
+            <option>Within the next month</option>
+            <option>In 1–3 months</option>
+          </select>
+        </label>
+      </div>
+
+      <label class="full-field">
+        <span>Message</span>
+        <textarea name="message" rows="5" placeholder="Tell us what's not working with your current online presence or what you want your website to help with."></textarea>
+      </label>
+
+      <button type="submit" class="btn btn-primary">Request a free consult</button>
+
+      <p class="form-note">No pressure. We'll review your details and recommend the simplest next step.</p>
+      <p class="form-status" id="formStatus" aria-live="polite"></p>
+    </form>
+
+    <p class="fallback-email">Prefer email? Reach us at <a href="mailto:hello@brownnoir.agency">hello@brownnoir.agency</a></p>
   </div>
 </section>
 
