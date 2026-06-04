@@ -298,6 +298,24 @@ h2 em { font-style: italic; color: var(--clay); }
 .plan.feat .btn-primary { background: var(--clay); }
 .plan.feat .btn-primary:hover { background: #fff; color: var(--ink); }
 
+/* more examples row */
+.more-examples { margin-top: 56px; padding-top: 40px; border-top: 1px solid var(--line); }
+.more-examples-label { font-size: .78rem; letter-spacing: .16em; text-transform: uppercase; font-weight: 600; color: var(--ink-soft); margin-bottom: 20px; }
+.example-card { display: block; border: 1px solid var(--line); border-radius: 4px; background: var(--bone); transition: .25s; text-decoration: none; color: inherit; max-width: 480px; }
+.example-card:hover { border-color: var(--clay); transform: translateY(-3px); box-shadow: 0 16px 36px -20px var(--shadow); }
+.example-card-inner { display: flex; justify-content: space-between; align-items: flex-end; padding: 26px 28px; gap: 20px; }
+.example-tag { font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; font-weight: 600; color: var(--clay); display: block; margin-bottom: 10px; }
+.example-name { font-family: var(--serif); font-size: 1.4rem; font-weight: 600; letter-spacing: -.01em; margin-bottom: 2px; }
+.example-url { font-size: .82rem; color: var(--ink-soft); margin-bottom: 12px; }
+.example-desc { font-size: .9rem; color: var(--ink-soft); max-width: 34ch; line-height: 1.55; }
+.example-cta { font-size: .88rem; font-weight: 600; color: var(--clay); white-space: nowrap; flex-shrink: 0; }
+
+/* pricing note */
+.packages-note { font-size: .92rem; color: var(--ink-soft); margin-top: 16px; font-style: italic; }
+
+/* p-price "From" prefix sizing */
+.p-price small:first-child { font-size: .75rem; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; vertical-align: middle; margin-right: 2px; }
+
 /* clients strip */
 .clients { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 56px 0; background: var(--paper); }
 .client-logos { display: flex; flex-wrap: wrap; gap: 48px 60px; align-items: center; justify-content: center; margin-top: 36px; }
