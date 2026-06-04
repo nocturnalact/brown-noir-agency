@@ -289,7 +289,8 @@ h2 em { font-style: italic; color: var(--clay); }
 }
 .case-top .biz { font-family: var(--serif); font-size: 1.2rem; font-weight: 600; color: var(--paper); }
 .case-top .biz small { display: block; font-family: var(--grot); font-size: .74rem; color: #a89c8d; font-weight: 500; letter-spacing: .04em; }
-.live-dot { font-size: .7rem; color: #7ec8a0; font-weight: 600; display: flex; align-items: center; gap: 6px; flex-shrink: 0; }
+.live-dot { font-size: .7rem; color: #7ec8a0; font-weight: 600; display: flex; align-items: center; gap: 6px; flex-shrink: 0; text-decoration: none; transition: opacity .2s; }
+a.live-dot:hover { opacity: .75; }
 .live-dot i { width: 7px; height: 7px; background: #7ec8a0; border-radius: 50%; animation: pulse 1.6s infinite; }
 @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .25; } }
 .case-body { padding: 24px; }
